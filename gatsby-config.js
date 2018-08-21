@@ -8,6 +8,12 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
-    'gatsby-plugin-resolve-src'
+    'gatsby-plugin-resolve-src',
+    'gatsby-plugin-google-fonts',
+      options: {
+        fonts: [
+          'Space Mono\:700'
+        ]
+      }
   ],
 }
