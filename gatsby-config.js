@@ -9,11 +9,13 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     'gatsby-plugin-resolve-src',
-    'gatsby-plugin-google-fonts',
+    {
+      resolve: 'gatsby-plugin-google-fonts',
       options: {
         fonts: [
-          'Space Mono\:700'
+          'space mono\:700'
         ]
       }
+    },
   ],
 }

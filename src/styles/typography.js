@@ -8,7 +8,7 @@ import { animationTime, animationCurve } from './global'
 // Font family
 export const fontFamilies = {
   body: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
-  heading: "Space Mono"
+  heading: "'Space Mono', monospace"
 }
 
 // Font weights
