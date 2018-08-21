@@ -17,7 +17,7 @@ export const Container = styled.button`
   justify-content: center;
   height: ${buttonHeightMobile};
   border-radius: ${borderRadius};
-  padding: 0 ${spacing.medium};
+  padding: 0 ${spacing.large};
   cursor: pointer;
   text-align: center;
   color: ${white};
@@ -31,7 +31,7 @@ export const Container = styled.button`
   }
 
   ${media.medium`
-    padding: 0 ${spacing.large};
+    padding: 0 ${spacing.xLarge};
     height: ${buttonHeightDesktop};
   `};
 

@@ -137,7 +137,7 @@ const Mark = styled.img`
   left: 0;
   right: 0;
   margin: auto;
-  width: 600px;
+  width: 660px;
   opacity: 0.1;
   mix-blend-mode: lighten;
   animation: ${float} 20s linear infinite;
@@ -162,7 +162,7 @@ const Hero = () => (
       <Content>
         <Title>Financial crime compliance for new-age companies</Title>
         <Subtitle>Unit21 uses machine learning to help you identify and investigate money laundering. Focus on growing your business, not your compliance operations.</Subtitle>
-        <Button primary>Schedule a demo</Button>
+        <Button primary href="mailto:info@unit21.ai?subject=I'd like to see a demo!">Schedule a demo</Button>
       </Content>
     </Wrapper>
     <Mark src={require("static/images/logo-mark.svg")} alt="Unit21 logo" role="presentation" />

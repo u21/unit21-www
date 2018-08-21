@@ -5,8 +5,8 @@ import Utilities from './utilities'
 import { white } from './colors'
 
 // Misc
-export const buttonHeightMobile = '44px'
-export const buttonHeightDesktop = '52px'
+export const buttonHeightMobile = '48px'
+export const buttonHeightDesktop = '56px'
 
 // Animation
 export const animationTime = '0.3s'

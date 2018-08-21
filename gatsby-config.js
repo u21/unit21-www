@@ -13,7 +13,8 @@ module.exports = {
       resolve: 'gatsby-plugin-google-fonts',
       options: {
         fonts: [
-          'space mono\:700'
+          'space mono\:700',
+          'source sans pro\:400'
         ]
       }
     },
