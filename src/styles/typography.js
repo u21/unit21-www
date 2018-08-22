@@ -21,7 +21,7 @@ export const fontWeights = {
 
 export const lineHeights = {
   base: 1.5,
-  heading: 1.25
+  heading: 1.3
 }
 
 // Font sizes

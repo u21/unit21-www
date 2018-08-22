@@ -11,6 +11,8 @@ import Section from 'components/Section'
 import * as spacing from 'styles/spacing'
 import { media, mediaDown } from 'styles/media'
 
+const currentYear = new Date().getFullYear()
+
 const float = keyframes`
   0%, 100% { transform: translateY(5%) rotate(3deg); }
   50% { transform: translateY(0) rotate(-5deg); }
@@ -86,6 +88,7 @@ const Mark = styled.img`
   width: 660px;
   opacity: 0.1;
   mix-blend-mode: lighten;
+  pointer-events: none;
   animation: ${float} 30s linear infinite;
 
   ${media.medium`
@@ -109,7 +112,7 @@ const Contact = () => (
     </Section>
     <Copyright>
       <Wrapper>
-        <p>© 2018 Unit21 Inc.</p>
+        <p>© {currentYear} Unit21 Inc.</p>
       </Wrapper>
     </Copyright>
     <Mark src={require("static/images/logo-mark.svg")} alt="Unit21 logo" role="presentation" />

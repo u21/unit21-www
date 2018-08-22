@@ -141,6 +141,7 @@ const Mark = styled.img`
   width: 660px;
   opacity: 0.1;
   mix-blend-mode: lighten;
+  pointer-events: none;
   animation: ${float} 30s linear infinite;
 
   ${media.medium`
