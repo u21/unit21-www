@@ -1,8 +1,8 @@
 import React from 'react'
-import styled from 'styled-components'
-import { node, func } from 'prop-types'
+import styled, { css } from 'styled-components'
+import { node, func, bool } from 'prop-types'
 import { Link } from 'gatsby'
-import { mix } from 'polished'
+import { mix, rgba } from 'polished'
 
 import { primaryColor, white, black } from 'styles/colors'
 import { animationTime, animationCurve, borderRadius, buttonHeightMobile, buttonHeightDesktop } from 'styles/global'
@@ -29,6 +29,19 @@ export const Container = styled.button`
   &:active {
     background-color: ${mix(0.93, primaryColor, black)};
   }
+
+  ${props => props.secondary && css`
+    background-color: transparent;
+    color: ${white};
+    border: 1px solid ${rgba(white, 0.15)};
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: transparent;
+      border-color: ${rgba(white, 0.3)};
+    }
+  `}
 
   ${media.medium`
     padding: 0 ${spacing.xLarge};
@@ -59,11 +72,11 @@ const getContainer = props => {
   return Container
 }
 
-const Button = ({ children, ...rest }) => {
+const Button = ({ children, primary, secondary, ...rest }) => {
   const ActualContainer = getContainer(rest)
 
   return (
-    <ActualContainer {...rest}>
+    <ActualContainer primary={primary} secondary={secondary} {...rest}>
       <SmallCaps>
         {children}
       </SmallCaps>
@@ -73,7 +86,9 @@ const Button = ({ children, ...rest }) => {
 
 Button.propTypes = {
   children: node.isRequired,
-  Container: func
+  Container: func,
+  primary: bool,
+  secondary: bool
 }
 
 export default Button

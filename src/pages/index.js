@@ -10,6 +10,7 @@ import Hero from 'components/Hero'
 const Home = () => (
   <Layout>
     <Hero />
+    <div id="overview" />
     <Section>
       <Wrapper>
         <FeatureRow

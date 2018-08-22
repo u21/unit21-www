@@ -5,7 +5,8 @@ import { greyDark, greyLight, white } from 'styles/colors'
 import { H1, Lead } from 'styles/typography'
 import * as spacing from 'styles/spacing'
 import Wrapper from 'components/Wrapper'
-import Button from 'components/Button'
+import Button from 'components/button/Button'
+import ButtonGroup from 'components/button/ButtonGroup'
 import { media, mediaDown } from 'styles/media'
 
 const float = keyframes`
@@ -162,7 +163,10 @@ const Hero = () => (
       <Content>
         <Title>Financial crime compliance for new-age companies</Title>
         <Subtitle>Unit21 uses machine learning to help you identify and investigate money laundering. Focus on growing your business, not your compliance operations.</Subtitle>
-        <Button primary href="mailto:info@unit21.ai?subject=I'd like to see a demo!">Schedule a demo</Button>
+        <ButtonGroup>
+          <Button primary href="mailto:contact@unit21.ai?subject=I'd like to see a demo!">Schedule a demo</Button>
+          <Button secondary href="#overview">Learn more</Button>
+        </ButtonGroup>
       </Content>
     </Wrapper>
     <Mark src={require("static/images/logo-mark.svg")} alt="Unit21 logo" role="presentation" />
