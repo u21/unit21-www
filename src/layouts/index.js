@@ -5,10 +5,10 @@ import Helmet from 'react-helmet'
 const Layout = ({ children }) => (
   <>
     <Helmet
-      title="Unit21"
+      title="UNIT21"
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: 'Financial Crimes Compliance' },
+        { name: 'keywords', content: 'anti money laundering, money laundering,  financial crimes, aml' },
       ]}
     />
     {children}
