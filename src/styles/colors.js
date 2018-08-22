@@ -1,6 +1,6 @@
 // Primary
 
-export const blue = '#4B48D8'
+export const blue = '#5075EF'
 
 // Greys
 

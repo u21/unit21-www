@@ -116,14 +116,14 @@ const Subtitle = styled(Lead)`
 `
 
 const Logo = styled.img`
-  width: 104px;
+  width: 110px;
 
   ${media.small`
-    width: 110px;
+    width: 120px;
   `};
 
   ${media.medium`
-    width: 120px;
+    width: 130px;
   `};
 
   ${media.large`
@@ -140,7 +140,7 @@ const Mark = styled.img`
   width: 660px;
   opacity: 0.1;
   mix-blend-mode: lighten;
-  animation: ${float} 20s linear infinite;
+  animation: ${float} 30s linear infinite;
 
   ${media.medium`
     width: 75%;
