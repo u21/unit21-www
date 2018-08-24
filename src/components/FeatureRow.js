@@ -135,7 +135,7 @@ const Number = styled(SmallCaps)`
 
 const FeatureRow = ({ heading, description, figure, alt, number }) => (
   <Container alt={alt}>
-    <FigureWrap alt={alt}><img src={require(`static/images/${figure}`)} alt="" role="presentation" /></FigureWrap>
+    <FigureWrap alt={alt}><img src={require(`static/images/${figure}.png`)} alt="" role="presentation" /></FigureWrap>
     <Content>
       <Number>{number}</Number>
       <Heading>{heading}</Heading>
