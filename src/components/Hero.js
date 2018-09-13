@@ -162,8 +162,8 @@ const Hero = () => (
     </Nav>
     <Wrapper>
       <Content>
-        <Title>The criminology department of finance</Title>
-        <Subtitle>Unit21 uses machine learning to help you identify and investigate money laundering. Focus on growing your business, not your compliance operations.</Subtitle>
+        <Title>Fighting financial crime for modern companies</Title>
+        <Subtitle>Unit21 uses machine learning to help you identify and investigate fraud and money laundering. Focus on growing your business, not your risk operations.</Subtitle>
         <ButtonGroup>
           <Button primary href="mailto:contact@unit21.ai?subject=I'd like to see a demo!">Schedule a demo</Button>
           <Button secondary href="#overview">Learn more</Button>
