@@ -15,22 +15,22 @@ const Home = () => (
       <Wrapper>
         <FeatureRow
           number="01"
-          heading="Reduce the risk of massive fines"
-          description="Financial institutions have been fined $321 billion since 2008 for failure to comply with regulation such as anti-money laundering. These fines can make or break your business."
-          figure="plan"
+          heading="Streamline your financial crimes compliance operations."
+          description="Anti-money laundering fines can make or break your business. We provide a machine learning solution to reduce alert resolution time so you can focus efforts on the cases that matter."
+          figure="operations"
         />
         <FeatureRow
           number="02"
-          heading="Don't waste time on false positives"
-          description="Our product provides a configurable and flexible decisions engine that uses machine learning to learn from human investigations. We reduce false positives and help prevent crime from slipping through the cracks."
-          figure="search"
+          heading="Don't waste time on investigation overhead."
+          description="Use our beautiful, modern AML workbench to enhance your compliance operations so you can operate at maximal efficiency. Our software is designed to empower teams of sizes from one to multiple hundreds."
+          figure="workbench"
           alt
         />
         <FeatureRow
           number="03"
-          heading="Optimize your compliance processes"
-          description="Unit21 provides a UI-first case management product, enabling your analysts to focus on the investigations and not the tool."
-          figure="stats"
+          heading="Leverage our team of expert human analysts."
+          description="Fully or partially offload your manual AML reviews to our team. Unit21's operations analysts have years of experience in AML investigations and reporting. We charge by review quantity - not by the hour."
+          figure="expert"
         />
       </Wrapper>
     </Section>

@@ -3,7 +3,7 @@ import styled, { keyframes } from 'styled-components'
 import { rgba } from 'polished'
 
 import { H2 } from 'styles/typography'
-import { greyDark, greyLight, white, black } from 'styles/colors'
+import { greyDark, greyLight, white } from 'styles/colors'
 import { verticalPadding } from 'styles/global'
 import Wrapper from 'components/Wrapper'
 import Button from 'components/button/Button'
@@ -105,7 +105,7 @@ const Contact = () => (
     <Section>
       <Wrapper>
         <Inner>
-          <Title>Interested in improving your compliance processes while preventing financial crime on your platform?</Title>
+          <Title>Interested in learning more about how we can help streamline your compliance operations?</Title>
           <ContactButton primary href="mailto:contact@unit21.ai">Contact us</ContactButton>
         </Inner>
       </Wrapper>

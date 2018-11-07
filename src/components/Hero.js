@@ -17,29 +17,29 @@ const float = keyframes`
 const Container = styled.header`
   position: relative;
   overflow: hidden;
-  background-color: ${greyDark};
+  background-color: ${white};
   color: ${greyLight};
   padding-top: 6rem;
-  padding-bottom: 4.5rem;
+  padding-bottom: 3rem;
 
   ${media.small`
     padding-top: 7rem;
-    padding-bottom: 5.5rem;
+    padding-bottom: 3.5rem;
   `};
 
   ${media.medium`
     padding-top: 8rem;
-    padding-bottom: 6.5rem;
+    padding-bottom: 4rem;
   `};
 
   ${media.large`
     padding-top: 11rem;
-    padding-bottom: 8rem;
+    padding-bottom: 5rem;
   `};
 
   ${media.xLarge`
     padding-top: 11rem;
-    padding-bottom: 10rem;
+    padding-bottom: 6rem;
   `};
 
   ${mediaDown.medium`
@@ -94,7 +94,7 @@ const Content = styled.div`
 `
 
 const Title = styled(H1)`
-  color: ${white};
+  color: ${greyDark};
   margin-bottom: ${spacing.medium};
 
   ${media.medium`
@@ -139,8 +139,8 @@ const Mark = styled.img`
   right: 0;
   margin: auto;
   width: 660px;
-  opacity: 0.1;
-  mix-blend-mode: lighten;
+  opacity: 0.05;
+  mix-blend-mode: darken;
   pointer-events: none;
   animation: ${float} 30s linear infinite;
 
@@ -157,16 +157,15 @@ const Hero = () => (
   <Container>
     <Nav>
       <Wrapper>
-        <Logo src={require("static/images/logo.svg")} alt="Unit21 logo" role="presentation" />
+        <Logo src={require("static/images/logo.png")} alt="Unit21 logo" />
       </Wrapper>
     </Nav>
     <Wrapper>
       <Content>
-        <Title>Fighting financial crime for modern companies</Title>
-        <Subtitle>Unit21 uses machine learning to help you identify and investigate fraud and money laundering. Focus on growing your business, not your risk operations.</Subtitle>
+        <Title>The human-powered API for compliance operations.</Title>
+        <Subtitle>Unit21 uses machine learning & human intelligence to help you identify and investigate money laundering & fraud.</Subtitle>
         <ButtonGroup>
           <Button primary href="mailto:contact@unit21.ai?subject=I'd like to see a demo!">Schedule a demo</Button>
-          <Button secondary href="#overview">Learn more</Button>
         </ButtonGroup>
       </Content>
     </Wrapper>

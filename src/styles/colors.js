@@ -1,6 +1,7 @@
 // Primary
 
 export const blue = '#5075EF'
+export const purple = '#8280BD'
 
 // Greys
 
@@ -17,6 +18,6 @@ export const black = '#000'
 
 // Set colors
 
-export const primaryColor = blue
+export const primaryColor = purple
 export const backgroundColor = offWhite
 export const borderColor = greyLightest
