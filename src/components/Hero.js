@@ -1,5 +1,5 @@
 import React from 'react'
-import styled, { keyframes } from 'styled-components'
+import styled from 'styled-components'
 
 import { greyDark, greyLight, white } from 'styles/colors'
 import { H1, Lead } from 'styles/typography'
@@ -8,11 +8,6 @@ import Wrapper from 'components/Wrapper'
 import Button from 'components/button/Button'
 import ButtonGroup from 'components/button/ButtonGroup'
 import { media, mediaDown } from 'styles/media'
-
-const float = keyframes`
-  0%, 100% { transform: translateY(5%) rotate(3deg); }
-  50% { transform: translateY(0) rotate(-5deg); }
-`
 
 const Container = styled.header`
   position: relative;
@@ -132,27 +127,6 @@ const Logo = styled.img`
   `};
 `
 
-const Mark = styled.img`
-  position: absolute;
-  top: 5%;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 660px;
-  opacity: 0.05;
-  mix-blend-mode: darken;
-  pointer-events: none;
-  animation: ${float} 30s linear infinite;
-
-  ${media.medium`
-    width: 75%;
-    height: auto;
-    left: auto;
-    right: -5%;
-    top: -5%;
-  `};
-`
-
 const Hero = () => (
   <Container>
     <Nav>
@@ -169,7 +143,6 @@ const Hero = () => (
         </ButtonGroup>
       </Content>
     </Wrapper>
-    <Mark src={require("static/images/logo-mark.svg")} alt="Unit21 logo" role="presentation" />
   </Container>
 )
 
