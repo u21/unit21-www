@@ -112,6 +112,9 @@ const Contact = () => (
     </Section>
     <Copyright>
       <Wrapper>
+        <p><a href={require("static/unit21-privacy-policy.pdf")} download> Privacy Policy</a></p>
+      </Wrapper>
+      <Wrapper>
         <p>© {currentYear} Unit21 Inc.</p>
       </Wrapper>
     </Copyright>
