@@ -8,7 +8,7 @@ const Layout = ({ children }) => (
       title="UNIT21"
       meta={[
         { name: 'description', content: 'Financial Crimes Compliance' },
-        { name: 'keywords', content: 'anti money laundering, money laundering,  financial crimes, aml' },
+        { name: 'keywords', content: 'anti money laundering, money laundering,  financial crimes, aml, fraud, fintech' },
       ]}
     />
     {children}
